@@ -163,7 +163,7 @@ Fig. 5: The app is equipped with a menu bar that provides a variety of options, 
 
 **Basemaps:**
 
-The app supports the **Street**, **Imagery**, and **Topo** basemaps that are provided by [Esri ArcGIS](https://www.esri.com/en-us/arcgis/about-arcgis/overview). Both, the user location and the buildings of UCL are formulated in a such way that changes on the map layers do not interrupt the normal operation of the datasets. The Street map layer is by default loaded when the mobile app launches. The layer that is activated is shown with a different font weight (Fig. 6). CSS and [Javascript](https://developer.mozilla.org/bm/docs/Web/JavaScript) are used to provide these functionalities, while the [leaflet providers](https://github.com/leaflet-extras/leaflet-providers) plugin is employed to get access in the ArcGIS layers of Esri. The map’s methods ```addLayer``` and ```clearLayers``` of the ```L.featureGroup``` class are mainly used. 
+The app supports the **Street**, **Imagery**, and **Topo** basemaps that are provided by [Esri ArcGIS](https://www.esri.com/en-us/arcgis/about-arcgis/overview). Both, the user location and the buildings of UCL are formulated in a such way that changes on the map layers do not interrupt the normal operation of the datasets. The Street map layer is by default loaded when the mobile app launches. The layer that is activated is shown with a different font weight (Fig. 6). [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) and [Javascript](https://developer.mozilla.org/bm/docs/Web/JavaScript) are used to provide these functionalities, while the [leaflet providers](https://github.com/leaflet-extras/leaflet-providers) plugin is employed to get access in the ArcGIS layers of Esri. The map’s methods ```addLayer``` and ```clearLayers``` of the ```L.featureGroup``` class are mainly used. 
 
 ![2](https://user-images.githubusercontent.com/32243459/39722324-3318bed4-523a-11e8-9345-b692b4faf731.png)
 
@@ -171,7 +171,7 @@ Fig. 6: The Basemaps option is capable to use different basemaps using the ArcGI
 
 **Layers:**
 
-The buildings of UCL are activated or deactivated with that option (Fig. 7). This option can be extended to accommodate more datasets and functionalities. [Javascript](https://developer.mozilla.org/bm/docs/Web/JavaScript), CSS and the [Leaflet](https://leafletjs.com/) library are used to import this functionality. The map’s methods ```addLayer``` and ```clearLayers``` of the ```L.featureGroup``` class are mainly used. 
+The buildings of UCL are activated or deactivated with that option (Fig. 7). This option can be extended to accommodate more datasets and functionalities. [Javascript](https://developer.mozilla.org/bm/docs/Web/JavaScript), [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) and the [Leaflet](https://leafletjs.com/) library are used to import this functionality. The map’s methods ```addLayer``` and ```clearLayers``` of the ```L.featureGroup``` class are mainly used. 
 
 ![3](https://user-images.githubusercontent.com/32243459/39722360-545aec5c-523a-11e8-96d1-25691d0437af.png)
 
