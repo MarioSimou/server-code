@@ -80,13 +80,10 @@ The construction of this label type is based on leaflet classes extension. In pa
 
 This type of label is created using the L.popup class that is by default provided by leaflet. At this case, a pop up is created and then is attached to the geojson layer. The pointToLayer method is employed to append the pop up on the geojson layer.  
 
+![7b](https://user-images.githubusercontent.com/32243459/39721419-73151260-5237-11e8-98a6-cc415028b817.png)
 
 
-
-
-
-
-
+![7a](https://user-images.githubusercontent.com/32243459/39721448-85bc971c-5237-11e8-8b0c-2b892bd8ea33.png)
 
 Fig. 1: The two types of labels that are employed for the UCL Question System App.
 
