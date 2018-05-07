@@ -1,7 +1,7 @@
 # server-code
 
 
-**1. UCL Question System App**
+# 1. UCL Question System App
 
 *- Description*
 
@@ -99,3 +99,49 @@ Initially, with a double click on the map, a pop up window with two possible opt
 ![12](https://user-images.githubusercontent.com/32243459/39721566-dc411d2e-5237-11e8-823b-4217d27132c7.png)
 
 Fig. 3: The process of form loading is shown in this figure.
+
+
+---------------------------------------------------------------------------------------------------------------------------
+# 2.UCL Quiz App
+
+*- Description*
+
+>The UCL Quiz app is a location-based smartphone/tablet app, which employs the user location and prompts him/her on a quiz test. The questions, which have a historical related content,  are based on the user’s proximity with respect to the buildings of UCL.
+
+*- Target Audience*
+
+>The web application can be used by anyone of any age. The user does not need to have any experience in order to be able to use the application.
+
+*-Product Goals*
+
+>The fact that the app could be employed for educational purposes and be used by the students of UCL is the main reason that led us on the development of the application.
+
+*- Tech Details*
+
+>The UCL quiz app can be used on any Android device that supports an android model above 2.3 (API Level 10) (Gingerbread), and is implemented based on the Cordova Phonegap build1. As a rule of thumb, Android versions become unsupported by Cordova as they dip below 5% of the Android users. A better intuition about the model’s compatibility can be taken by the following Google’s android device dashboard: [here](https://developer.android.com/about/dashboards/) 
+
+A user can download the application from the following link:
+
+> https://build.phonegap.com/apps/3150421/builds
+
+*-How to install UCL Quiz mobile app?*
+
+>The app can be downloaded from this [link](https://build.phonegap.com/apps/3145369/builds) using two different ways:
+
+1.Download the APK (Android application Package) file and transfer it to you mobile device using a usb cable. Before you start the installation, you need to check the unknown sources options on your mobile, which can be found on the security settings tab (Fig. 4). 
+This needs to be done as the mobile app is an unknown source app for your mobile device, and the user’s privileges are needed to accept the installation. Then, the UCL Quiz app can be normally installed on your device and an app icon is created on your home screen.
+
+2.The application can be downloaded using a QR app reader [here](https://play.google.com/store/search?q=qr%20reader&hl=en_GB). Install one of the recommended QR apps, open it, and place the camera of your device over the QR code that is given for the UCL Quiz app. Then, download the app and install it. Similarly to step 1, the unknown sources option needs to be checked in order to permit the installation. After the installation, an app icon is created on your home screen.
+
+![15](https://user-images.githubusercontent.com/32243459/39722056-54e38c16-5239-11e8-94d0-ac7360e0337d.png)
+
+Fig 4. The unknown sources option needs to be enabled so that the mobile app could be normally installed.
+ 
+*- System Architecture*
+
+While a variety of models are available about how the communication between a client and a server is constructed, the three-tier architecture was chosen and implemented for the purpose of our assignment. In these terms, the created app, which comprises the presentation tier of our architecture, displays information related to the requirements and specifications of the project, and any user-interface interaction is processed by the application tier and send it on the data tier. At this layer, the server and the database are maintained. 
+
+*- Constraints*
+
+The map display has been set such as the UCL campus is only shown. Therefore, the app will not work correctly if it is launched to an area outer of UCL campus. 
+
