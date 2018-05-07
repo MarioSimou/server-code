@@ -1,6 +1,3 @@
-# server-code
-
-
 # 1. UCL Question System App
 
 *- Description*
