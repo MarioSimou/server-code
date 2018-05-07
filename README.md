@@ -5,7 +5,7 @@
 
 *- Description*
 
->The UCL Question System app is a browsed-based web application that works in conjunction with the UCL Quiz app. The main operation of the application is data collection and the population of the back-end database that is used by the UCL Quiz app. In particular, it enables to a user to record POIs in which information has been attached that is employed by the quiz app.
+>The UCL Question System app is a browsed-based web application that works in conjunction with the UCL Quiz app. The main operation of the application is data collection and the population of the back-end database that is used by the [UCL Quiz app](https://github.com/MarioSimou/UCL-Quiz-app). In particular, it enables to a user to record POIs in which information has been attached that is employed by the quiz app.
 
 *- Target Audience*
 
@@ -13,7 +13,7 @@
 
 *- Product Goals*
 
->The goal of the current app is to enhance the capabilities of ULC Quiz app, so that a user can easily populate the POI dataset that is present in the database. As a result, the dataset is constantly expanded and no more procedures are needed to adopt the changes that are happening in the dataset. 
+>The goal of the current app is to enhance the capabilities of [ULC Quiz app](https://github.com/MarioSimou/UCL-Quiz-app), so that a user can easily populate the POI dataset that is present in the database. As a result, the dataset is constantly expanded and no more procedures are needed to adopt the changes that are happening in the dataset. 
 
 *- Tech Details*
 
@@ -31,7 +31,7 @@ A user can access the application in the following link:
 
 *- System Architecture*
 
->While a variety of models are available about how the communication between a client and a server is constructed, the three-tier architecture was chosen and implemented for the purpose of our assignment. In these terms, the created app, which comprises the presentation tier of our architecture, displays information related to the requirements and specifications of the project, and any user-interface interaction is processed by the application tier and send it on the data tier. At this layer, the server and the database are maintained. 
+>While a variety of models are available about how the communication between a client and a server is constructed, the three-**tier architecture** was chosen and implemented for the purpose of our assignment. In these terms, the created app, which comprises the **presentation tier** of our architecture, displays information related to the requirements and specifications of the project, and any user-interface interaction is processed by the **application tier** and send it on the **data tier**. At this layer, the server and the database are maintained. 
 
 *- Constraints*
 
@@ -39,8 +39,8 @@ A user can access the application in the following link:
 
 ## Featureset
 
-The main functionality of the web application is based on the Leaflet library, using a variety of functionalities that the library is compatible with. Plugins are also employed to improve the capabilities of the application.
-The UCL Question System app is equipped with a variety of commands that are described below:
+The main functionality of the web application is based on the [Leaflet](https://leafletjs.com/) library, using a variety of functionalities that the library is compatible with. Plugins are also employed to improve the capabilities of the application.
+The [UCL Question System app](https://github.com/MarioSimou/UCL-Question-System-app) is equipped with a variety of commands that are described below:
 
 ![6](https://user-images.githubusercontent.com/32243459/39720997-0093dec0-5236-11e8-8766-17d5ff685771.png)
 
@@ -53,36 +53,36 @@ This command has been built using the leaflet search plugin.
 
 **Clean Command**
 
-Markers that may remain from a search process are cleaned from the map. This command uses the removeFrom function to remove the markers from the map.
+Markers that may remain from a search process are cleaned from the map. This command uses the ```removeFrom``` function to remove the markers from the map.
 
 ![8](https://user-images.githubusercontent.com/32243459/39721063-216de74e-5236-11e8-9538-67ac7d8b4b09.png)
 
 **Full Zoom Command**
 
-The map zoom changes so that a full display of the data is given. This command uses the fitBounds, and getBounds methods to set the bounding boxes of the map display and the buildings dataset equal.
+The map zoom changes so that a full display of the data is given. This command uses the ```fitBounds```, and ```getBounds``` methods to set the bounding boxes of the map display and the buildings dataset equal.
 
 ![11](https://user-images.githubusercontent.com/32243459/39721157-6fceb170-5236-11e8-8edd-b4e404b5c744.png)
 
 **Geolocation Command**
 
 Enables the geolocation of the user and marks his/her location on a map. The accuracy of the geolocation is shown with a buffer around the marked position of the user. Based on the user desire, the geolocation command can be activated or deactivated.
-The functionality of the geolocation command is based on the locate, stopLocate methods, and locationfound and locationerror events. The geolocation has been adjusted using the desired location options.
+The functionality of the geolocation command is based on the ```locate```, ```stopLocate``` methods, and ```locationfound``` and ```locationerror``` events. The geolocation has been adjusted using the desired location options.
 
 **Labels - Pop up windows**
 
-While both images below show the same content, their foundations are based on  different principles and, therefore, they are categorised in two distinct label types. The left image is a class-based label, whereas the right image is a popup-based label.  
+While both images below show the same content, their foundations are based on  different principles and, therefore, they are categorised in two distinct label types. The left image is a **class-based** label, whereas the right image is a **popup-based** label.  
 
 *1) Class-based:*
 
-The construction of this label type is based on leaflet classes extension. In particular, a leaflet class is extended and a div element is created using the L.DomUti utility function of Leaflet to communicate with the DOM tree. At this point, an update method is set on the div element, as well as mouse events that permit its update when the mouse moves.
+The construction of this label type is based on leaflet classes extension. In particular, a leaflet class is extended and a div element is created using the ```L.DomUti``` utility function of Leaflet to communicate with the [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model) tree. At this point, an ```update``` method is set on the *div* element, as well as mouse events that permit its update when the mouse moves.
 
 *2) Popup-based:*
 
-This type of label is created using the L.popup class that is by default provided by leaflet. At this case, a pop up is created and then is attached to the geojson layer. The pointToLayer method is employed to append the pop up on the geojson layer.  
+This type of label is created using the ```L.popup``` class that is by default provided by leaflet. At this case, a pop up is created and then is attached to the geojson layer. The ```pointToLayer``` method is employed to append the pop up on the geojson layer.  
 
 ![13](https://user-images.githubusercontent.com/32243459/39721604-f8f1db16-5237-11e8-894b-4f9576c921e5.png)
 
-Fig. 1: The two types of labels that are employed for the UCL Question System App.
+Fig. 1: The two types of labels that are employed for the [UCL Question System App](https://github.com/MarioSimou/UCL-Question-System-app).
 
 **Clusters**
 
@@ -94,7 +94,7 @@ Fig. 2: The figure shows how the map display is adapted in order to show a certa
 
 **Form**
 
-Initially, with a double click on the map, a pop up window with two possible options is displayed (Fig. 3). This has been created by binding a pop up on a marker that is constructed when the user click on the map. Selecting the Upload option, a form is loaded through an AJAX GET request, which uses the XMLHttpRequest function. Using Javascript and interacting with the DOM tree of the document, the HTML elements of the form are gained, and therefore, the user’s information is POSTed back on the server, after the form is submitted.   
+Initially, with a double click on the map, a pop up window with two possible options is displayed (Fig. 3). This has been created by binding a pop up on a marker that is constructed when the user click on the map. Selecting the Upload option, a form is loaded through an AJAX GET request, which uses the XMLHttpRequest function. Using [Javascript](https://developer.mozilla.org/bm/docs/Web/JavaScript) and interacting with the DOM tree of the document, the HTML elements of the form are gained, and therefore, the user’s information is POSTed back on the server, after the form is submitted.   
 
 ![12](https://user-images.githubusercontent.com/32243459/39721566-dc411d2e-5237-11e8-823b-4217d27132c7.png)
 
@@ -106,11 +106,11 @@ Fig. 3: The process of form loading is shown in this figure.
 
 *- Description*
 
->The UCL Quiz app is a location-based smartphone/tablet app, which employs the user location and prompts him/her on a quiz test. The questions, which have a historical related content,  are based on the user’s proximity with respect to the buildings of UCL.
+>The [UCL Quiz app](https://github.com/MarioSimou/UCL-Quiz-app) is a location-based smartphone/tablet app, which employs the user location and prompts him/her on a quiz test. The questions, which have a historical related content,  are based on the user’s proximity with respect to the buildings of UCL.
 
 *- Target Audience*
 
->The web application can be used by anyone of any age. The user does not need to have any experience in order to be able to use the application.
+>The mobile application can be used by anyone of any age. The user does not need to have any experience in order to be able to use the application.
 
 *-Product Goals*
 
@@ -118,7 +118,7 @@ Fig. 3: The process of form loading is shown in this figure.
 
 *- Tech Details*
 
->The UCL quiz app can be used on any Android device that supports an android model above 2.3 (API Level 10) (Gingerbread), and is implemented based on the Cordova Phonegap build1. As a rule of thumb, Android versions become unsupported by Cordova as they dip below 5% of the Android users. A better intuition about the model’s compatibility can be taken by the following Google’s android device dashboard: [here](https://developer.android.com/about/dashboards/) 
+>The [UCL quiz app](https://github.com/MarioSimou/UCL-Quiz-app) can be used on any Android device that supports an android model above 2.3 (API Level 10) (Gingerbread), and is implemented based on the [Cordova Phonegap](http://docs.phonegap.com/phonegap-build/overview/) build. As a rule of thumb, Android versions become unsupported by Cordova as they dip below 5% of the Android users. A better intuition about the model’s compatibility can be taken by the following Google’s android device dashboard: [here](https://developer.android.com/about/dashboards/) 
 
 A user can download the application from the following link:
 
@@ -128,10 +128,10 @@ A user can download the application from the following link:
 
 >The app can be downloaded from this [link](https://build.phonegap.com/apps/3145369/builds) using two different ways:
 
-1.Download the APK (Android application Package) file and transfer it to you mobile device using a usb cable. Before you start the installation, you need to check the unknown sources options on your mobile, which can be found on the security settings tab (Fig. 4). 
+1.Download the [APK](https://en.wikipedia.org/wiki/Android_application_package) file and transfer it to you mobile device using a usb cable. Before you start the installation, you need to check the unknown sources options on your mobile, which can be found on the security settings tab (Fig. 4). 
 This needs to be done as the mobile app is an unknown source app for your mobile device, and the user’s privileges are needed to accept the installation. Then, the UCL Quiz app can be normally installed on your device and an app icon is created on your home screen.
 
-2.The application can be downloaded using a QR app reader [here](https://play.google.com/store/search?q=qr%20reader&hl=en_GB). Install one of the recommended QR apps, open it, and place the camera of your device over the QR code that is given for the UCL Quiz app. Then, download the app and install it. Similarly to step 1, the unknown sources option needs to be checked in order to permit the installation. After the installation, an app icon is created on your home screen.
+2.The application can be downloaded using a QR app reader [here](https://play.google.com/store/search?q=qr%20reader&hl=en_GB). Install one of the recommended QR apps, open it, and place the camera of your device over the QR code that is given for the [UCL Quiz app](https://github.com/MarioSimou/UCL-Quiz-app). Then, download the app and install it. Similarly to step 1, the unknown sources option needs to be checked in order to permit the installation. After the installation, an app icon is created on your home screen.
 
 ![15](https://user-images.githubusercontent.com/32243459/39722056-54e38c16-5239-11e8-94d0-ac7360e0337d.png)
 
@@ -163,7 +163,7 @@ Fig. 5: The app is equipped with a menu bar that provides a variety of options, 
 
 **Basemaps:**
 
-The app supports the Street, Imagery, and Topo basemaps that are provided by Esri ArcGIS. Both, the user location and the buildings of UCL are formulated in a such way that changes on the map layers do not interrupt the normal operation of the datasets. The Street map layer is by default loaded when the mobile app launches. The layer that is activated is shown with a different font weight (Fig. 6). CSS and Javascript are used to provide these functionalities, while the leaflet providers plugin is employed to get access in the ArcGIS layers of Esri. The map’s methods addLayer and clearLayers of the L.featureGroup class are mainly used. 
+The app supports the **Street**, **Imagery**, and **Topo** basemaps that are provided by [Esri ArcGIS](https://www.esri.com/en-us/arcgis/about-arcgis/overview). Both, the user location and the buildings of UCL are formulated in a such way that changes on the map layers do not interrupt the normal operation of the datasets. The Street map layer is by default loaded when the mobile app launches. The layer that is activated is shown with a different font weight (Fig. 6). CSS and [Javascript](https://developer.mozilla.org/bm/docs/Web/JavaScript) are used to provide these functionalities, while the [leaflet providers](https://github.com/leaflet-extras/leaflet-providers) plugin is employed to get access in the ArcGIS layers of Esri. The map’s methods ```addLayer``` and ```clearLayers``` of the ```L.featureGroup``` class are mainly used. 
 
 ![2](https://user-images.githubusercontent.com/32243459/39722324-3318bed4-523a-11e8-9345-b692b4faf731.png)
 
@@ -171,7 +171,7 @@ Fig. 6: The Basemaps option is capable to use different basemaps using the ArcGI
 
 **Layers:**
 
-The buildings of UCL are activated or deactivated with that option (Fig. 7). This option can be extended to accommodate more datasets and functionalities. Javascript, CSS and the Leaflet library are used to import this functionality. The map’s methods addLayer and clearLayers of the L.featureGroup class are mainly used. 
+The buildings of UCL are activated or deactivated with that option (Fig. 7). This option can be extended to accommodate more datasets and functionalities. [Javascript](https://developer.mozilla.org/bm/docs/Web/JavaScript), CSS and the [Leaflet](https://leafletjs.com/) library are used to import this functionality. The map’s methods ```addLayer``` and ```clearLayers``` of the ```L.featureGroup``` class are mainly used. 
 
 ![3](https://user-images.githubusercontent.com/32243459/39722360-545aec5c-523a-11e8-96d1-25691d0437af.png)
 
@@ -207,16 +207,15 @@ Three different options are available (Fig. 9) for the time and proximity option
 
 On the other hand, the proximity quiz is equipped with distance-related options. In that case, a high, medium and easy difficulty option corresponds to a 50, 100 and 500 metres distance, respectively. In conjunction with the geolocation service that operates every thirty seconds, a question is shown to the user if his/her distance with respect to a UCL building is less than the specified threshold distance. For example, if the user chooses the option of high difficulty, then a question is only displayed on the user if his/her distance is less than 50 metres from the closest UCL building. The process is continuously executed every thirty seconds. The selected option is shown with a different font wieght.
 
-Javascript and CSS are employed to accommodate these functionalities.
+[Javascript](https://developer.mozilla.org/bm/docs/Web/JavaScript) and [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS) are employed to accommodate these functionalities.
 
 ![5](https://user-images.githubusercontent.com/32243459/39722426-a1e04cf6-523a-11e8-9d33-4cd4bea7213d.png)
 
 Fig. 9: The Quiz level determines different levels of difficulties for the time and proximity quiz option. 
 
 
-
 The main functionality of the web application is based on the Leaflet library, using a variety of functionalities that the library is compatible with. Plugins are also employed to improve the capabilities of the application.
-The UCL Question System app is equipped with a variety of commands that are described below:
+The [UCL Question System app](https://github.com/MarioSimou/UCL-Question-System-app) is equipped with a variety of commands that are described below:
 
 
 **2.Map-based commands**
@@ -226,31 +225,31 @@ The UCL Question System app is equipped with a variety of commands that are desc
 **Search Command**
 
 A commands that enables on a user to search a building based on its corresponded question. The result is indicated with a marker on the map.
-This command has been built using the leaflet search plugin.
+This command has been built using the [leaflet search](https://github.com/stefanocudini/leaflet-search) plugin.
 
 ![7](https://user-images.githubusercontent.com/32243459/39721038-14e85ac2-5236-11e8-87f2-08bafbf76a76.png)
 
 **Clean Command**
 
-Markers that may remain from a search process are cleaned from the map. This command uses the removeFrom function to remove the markers from the map.
+Markers that may remain from a search process are cleaned from the map. This command uses the ```removeFrom``` function to remove the markers from the map.
 
 ![8](https://user-images.githubusercontent.com/32243459/39721063-216de74e-5236-11e8-9538-67ac7d8b4b09.png)
 
 **Full Zoom Command**
 
-The map zoom changes so that a full display of the data is given. This command uses the fitBounds, and getBounds methods to set the bounding boxes of the map display and the buildings dataset equal.
+The map zoom changes so that a full display of the data is given. This command uses the ```fitBounds```, and ```getBounds``` methods to set the bounding boxes of the map display and the buildings dataset equal.
 
 **Labels - Pop up windows**
 
-While both images below show the same content, their foundations are based on  different principles and, therefore, they are categorised in two distinct label types. The left image is a class-based label, whereas the right image is a popup-based label (Fig. 10).  
+While both images below show the same content, their foundations are based on  different principles and, therefore, they are categorised in two distinct label types. The left image is a **class-based** label, whereas the right image is a **popup-based** label (Fig. 10).  
 
 *1) Class-based:*
 
-The construction of this label type is based on leaflet classes extension. In particular, a leaflet class is extended and a div element is created using the L.DomUti utility function of Leaflet to communicate with the DOM tree. At this point, an update method is set on the div element, as well as mouse events that permit its update when the mouse moves.
+The construction of this label type is based on leaflet classes extension. In particular, a leaflet class is extended and a div element is created using the ```L.DomUti``` utility function of [Leaflet](https://leafletjs.com/) to communicate with the DOM tree. At this point, an update method is set on the div element, as well as mouse events that permit its update when the mouse moves.
 
 *2) Popup-based:*
 
-This type of label is created using the L.popup class that is by default provided by leaflet. At this case, a pop up is created and then is attached to the geojson layer. The pointToLayer method is employed to append the pop up on the geojson layer.  
+This type of label is created using the ```L.popup``` class that is by default provided by leaflet. At this case, a pop up is created and then is attached to the geojson layer. The ```pointToLayer```g method is employed to append the pop up on the geojson layer.  
 
 ![13](https://user-images.githubusercontent.com/32243459/39721604-f8f1db16-5237-11e8-894b-4f9576c921e5.png)
 
@@ -268,4 +267,4 @@ Fig. 11: The figure shows how the map display is adapted in order to show a cert
 
 ## 3. Server Side Code - Node JS and REST
 
-The server code is deployed using the Node JS library. The REST architecture is deployed to  establish an HTTP protocol and perform requests on the server. The open-source postgreSQL database with PostGIS extension is also used to create the database. The server as well as the database are located in the UCL campus.
+The server code is deployed using the [Node JS](https://nodejs.org/en/) library. The [REST](https://stackoverflow.com/questions/671118/what-exactly-is-restful-programming) architecture is deployed to  establish an HTTP protocol and perform requests on the server. The open-source [postgreSQL](https://www.postgresql.org/) database with [PostGIS](https://postgis.net/) extension is also used to create the database. The server as well as the database are located in the UCL campus.
