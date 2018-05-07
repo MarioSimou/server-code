@@ -80,33 +80,22 @@ The construction of this label type is based on leaflet classes extension. In pa
 
 This type of label is created using the L.popup class that is by default provided by leaflet. At this case, a pop up is created and then is attached to the geojson layer. The pointToLayer method is employed to append the pop up on the geojson layer.  
 
-![7b](https://user-images.githubusercontent.com/32243459/39721419-73151260-5237-11e8-98a6-cc415028b817.png)
-
-
-![7a](https://user-images.githubusercontent.com/32243459/39721448-85bc971c-5237-11e8-8b0c-2b892bd8ea33.png)
+![13](https://user-images.githubusercontent.com/32243459/39721604-f8f1db16-5237-11e8-894b-4f9576c921e5.png)
 
 Fig. 1: The two types of labels that are employed for the UCL Question System App.
 
-Clusters
+**Clusters**
+
 The UCL POIs are shown as clusters using the marker cluster plugin. For different zoom levels, the map display is adapted so that a certain portion of buildings is shown.
 
-
-
-
-
-
-
-
-
-
-
-
-
+![9](https://user-images.githubusercontent.com/32243459/39721526-c0220d88-5237-11e8-998e-ffcf8317ccfb.png)
 
 Fig. 2: The figure shows how the map display is adapted in order to show a certain portion of the POIs. The non-shown POIs are indicated as clusters.
 
-Form
+**Form**
+
 Initially, with a double click on the map, a pop up window with two possible options is displayed (Fig. 3). This has been created by binding a pop up on a marker that is constructed when the user click on the map. Selecting the Upload option, a form is loaded through an AJAX GET request, which uses the XMLHttpRequest function. Using Javascript and interacting with the DOM tree of the document, the HTML elements of the form are gained, and therefore, the user’s information is POSTed back on the server, after the form is submitted.   
 
+![12](https://user-images.githubusercontent.com/32243459/39721566-dc411d2e-5237-11e8-823b-4217d27132c7.png)
 
 Fig. 3: The process of form loading is shown in this figure.
