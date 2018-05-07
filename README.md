@@ -86,7 +86,7 @@ Fig. 1: The two types of labels that are employed for the [UCL Question System A
 
 **Clusters**
 
-The UCL POIs are shown as clusters using the marker cluster plugin. For different zoom levels, the map display is adapted so that a certain portion of buildings is shown.
+The UCL POIs are shown as clusters using the [marker cluster](https://github.com/Leaflet/Leaflet.markercluster) plugin. For different zoom levels, the map display is adapted so that a certain portion of buildings is shown.
 
 ![9](https://user-images.githubusercontent.com/32243459/39721526-c0220d88-5237-11e8-998e-ffcf8317ccfb.png)
 
@@ -257,7 +257,7 @@ Fig. 10: The two types of labels that are employed for the UCL Question System A
 
 **Clusters**
 
-The UCL POIs are shown as clusters using the marker cluster plugin. For different zoom levels, the map display is adapted so that a certain portion of buildings is shown (Fig. 11).
+The UCL POIs are shown as clusters using the [marker cluster](https://github.com/Leaflet/Leaflet.markercluster) plugin. For different zoom levels, the map display is adapted so that a certain portion of buildings is shown (Fig. 11).
 
 ![9](https://user-images.githubusercontent.com/32243459/39721526-c0220d88-5237-11e8-998e-ffcf8317ccfb.png)
 
