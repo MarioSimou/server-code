@@ -63,9 +63,9 @@ The map zoom changes so that a full display of the data is given. This command u
 
 ![11](https://user-images.githubusercontent.com/32243459/39721157-6fceb170-5236-11e8-8edd-b4e404b5c744.png)
 
->Geolocation Command
+*Geolocation Command*
 
-Enables the geolocation of the user and marks his/her location on a map. The accuracy of the geolocation is shown with a buffer around the marked position of the user. Based on the user desire, the geolocation command can be activated or deactivated.
+>Enables the geolocation of the user and marks his/her location on a map. The accuracy of the geolocation is shown with a buffer around the marked position of the user. Based on the user desire, the geolocation command can be activated or deactivated.
 The functionality of the geolocation command is based on the locate, stopLocate methods, and locationfound and locationerror events. The geolocation has been adjusted using the desired location options.
 
 > Labels - Pop up windows
