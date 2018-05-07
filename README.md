@@ -37,38 +37,38 @@ A user can access the application in the following link:
 
 >The map display has been set such only that the UCL campus is shown. Therefore, the app will not work normally if it is launched to an area outside of UCL campus. 
 
-**Featureset**
+#Featureset
 
->The main functionality of the web application is based on the Leaflet library, using a variety of functionalities that the library is compatible with. Plugins are also employed to improve the capabilities of the application.
+The main functionality of the web application is based on the Leaflet library, using a variety of functionalities that the library is compatible with. Plugins are also employed to improve the capabilities of the application.
 The UCL Question System app is equipped with a variety of commands that are described below:
 
 ![6](https://user-images.githubusercontent.com/32243459/39720997-0093dec0-5236-11e8-8766-17d5ff685771.png)
 
-*Search Command *
+**Search Command**
 
->A commands that enables on a user to search a building based on its corresponded question. The result is indicated with a marker on the map.
+A commands that enables on a user to search a building based on its corresponded question. The result is indicated with a marker on the map.
 This command has been built using the leaflet search plugin.
 
 ![7](https://user-images.githubusercontent.com/32243459/39721038-14e85ac2-5236-11e8-87f2-08bafbf76a76.png)
 
-*Clean Command*
+**Clean Command**
 
->Markers that may remain from a search process are cleaned from the map. This command uses the removeFrom function to remove the markers from the map.
+Markers that may remain from a search process are cleaned from the map. This command uses the removeFrom function to remove the markers from the map.
 
 ![8](https://user-images.githubusercontent.com/32243459/39721063-216de74e-5236-11e8-9538-67ac7d8b4b09.png)
 
-*Full Zoom Command *
+**Full Zoom Command **
 
->The map zoom changes so that a full display of the data is given. This command uses the fitBounds, and getBounds methods to set the bounding boxes of the map display and the buildings dataset equal.
+The map zoom changes so that a full display of the data is given. This command uses the fitBounds, and getBounds methods to set the bounding boxes of the map display and the buildings dataset equal.
 
 ![11](https://user-images.githubusercontent.com/32243459/39721157-6fceb170-5236-11e8-8edd-b4e404b5c744.png)
 
-*Geolocation Command*
+**Geolocation Command**
 
->Enables the geolocation of the user and marks his/her location on a map. The accuracy of the geolocation is shown with a buffer around the marked position of the user. Based on the user desire, the geolocation command can be activated or deactivated.
+Enables the geolocation of the user and marks his/her location on a map. The accuracy of the geolocation is shown with a buffer around the marked position of the user. Based on the user desire, the geolocation command can be activated or deactivated.
 The functionality of the geolocation command is based on the locate, stopLocate methods, and locationfound and locationerror events. The geolocation has been adjusted using the desired location options.
 
-> Labels - Pop up windows
+**Labels - Pop up windows**
 
 While both images below show the same content, their foundations are based on  different principles and, therefore, they are categorised in two distinct label types. The left image is a class-based label, whereas the right image is a popup-based label.  
 
