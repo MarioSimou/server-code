@@ -61,15 +61,23 @@ Markers that may remain from a search process are cleaned from the map. This com
 
 The map zoom changes so that a full display of the data is given. This command uses the fitBounds, and getBounds methods to set the bounding boxes of the map display and the buildings dataset equal.
 
-Geolocation Command
+![11](https://user-images.githubusercontent.com/32243459/39721157-6fceb170-5236-11e8-8edd-b4e404b5c744.png)
+
+>Geolocation Command
+
 Enables the geolocation of the user and marks his/her location on a map. The accuracy of the geolocation is shown with a buffer around the marked position of the user. Based on the user desire, the geolocation command can be activated or deactivated.
 The functionality of the geolocation command is based on the locate, stopLocate methods, and locationfound and locationerror events. The geolocation has been adjusted using the desired location options.
 
-Labels - Pop up windows
+> Labels - Pop up windows
+
 While both images below show the same content, their foundations are based on  different principles and, therefore, they are categorised in two distinct label types. The left image is a class-based label, whereas the right image is a popup-based label.  
-1) Class-based:
+
+*1) Class-based:*
+
 The construction of this label type is based on leaflet classes extension. In particular, a leaflet class is extended and a div element is created using the L.DomUti utility function of Leaflet to communicate with the DOM tree. At this point, an update method is set on the div element, as well as mouse events that permit its update when the mouse moves.
-2) Popup-based: 
+
+*2) Popup-based:*
+
 This type of label is created using the L.popup class that is by default provided by leaflet. At this case, a pop up is created and then is attached to the geojson layer. The pointToLayer method is employed to append the pop up on the geojson layer.  
 
 
