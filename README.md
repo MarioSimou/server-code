@@ -37,7 +37,7 @@ A user can access the application in the following link:
 
 >The map display has been set such only that the UCL campus is shown. Therefore, the app will not work normally if it is launched to an area outside of UCL campus. 
 
-#Featureset
+# Featureset
 
 The main functionality of the web application is based on the Leaflet library, using a variety of functionalities that the library is compatible with. Plugins are also employed to improve the capabilities of the application.
 The UCL Question System app is equipped with a variety of commands that are described below:
@@ -57,7 +57,7 @@ Markers that may remain from a search process are cleaned from the map. This com
 
 ![8](https://user-images.githubusercontent.com/32243459/39721063-216de74e-5236-11e8-9538-67ac7d8b4b09.png)
 
-**Full Zoom Command **
+**Full Zoom Command**
 
 The map zoom changes so that a full display of the data is given. This command uses the fitBounds, and getBounds methods to set the bounding boxes of the map display and the buildings dataset equal.
 
