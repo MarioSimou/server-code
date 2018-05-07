@@ -18,11 +18,11 @@ The goal of the current app is to enhance the capabilities of ULC Quiz app, so t
 *- Tech Details*
 
 The web application is compatible with the following browsers:
--Google Chrome Version 66.0.3359.139 (64-bit)
--Google Chrome Version 48.0.2564.109 (64-bit)
--Mozilla Firefox Quantum Version 59.0.2 (64-bit)
--Mozilla Firefox Quantum Version 45.2.0 (64-bit)
--Internet Explorer 11 Version 11.0.9600.18920 (64-bit) 
+- Google Chrome Version 66.0.3359.139 (64-bit)
+- Google Chrome Version 48.0.2564.109 (64-bit)
+- Mozilla Firefox Quantum Version 59.0.2 (64-bit)
+- Mozilla Firefox Quantum Version 45.2.0 (64-bit)
+- Internet Explorer 11 Version 11.0.9600.18920 (64-bit) 
 
 A user can access the application in the following link:
 
