@@ -218,9 +218,10 @@ Fig. 9: The Quiz level determines different levels of difficulties for the time 
 The main functionality of the web application is based on the Leaflet library, using a variety of functionalities that the library is compatible with. Plugins are also employed to improve the capabilities of the application.
 The UCL Question System app is equipped with a variety of commands that are described below:
 
-![6](https://user-images.githubusercontent.com/32243459/39720997-0093dec0-5236-11e8-8766-17d5ff685771.png)
 
 **2.Map-based commands**
+
+![6](https://user-images.githubusercontent.com/32243459/39720997-0093dec0-5236-11e8-8766-17d5ff685771.png)
 
 **Search Command**
 
@@ -241,7 +242,7 @@ The map zoom changes so that a full display of the data is given. This command u
 
 **Labels - Pop up windows**
 
-While both images below show the same content, their foundations are based on  different principles and, therefore, they are categorised in two distinct label types. The left image is a class-based label, whereas the right image is a popup-based label.  
+While both images below show the same content, their foundations are based on  different principles and, therefore, they are categorised in two distinct label types. The left image is a class-based label, whereas the right image is a popup-based label (Fig. 10).  
 
 *1) Class-based:*
 
@@ -253,15 +254,16 @@ This type of label is created using the L.popup class that is by default provide
 
 ![13](https://user-images.githubusercontent.com/32243459/39721604-f8f1db16-5237-11e8-894b-4f9576c921e5.png)
 
-Fig. 1: The two types of labels that are employed for the UCL Question System App.
+Fig. 10: The two types of labels that are employed for the UCL Question System App.
 
 **Clusters**
 
-The UCL POIs are shown as clusters using the marker cluster plugin. For different zoom levels, the map display is adapted so that a certain portion of buildings is shown.
+The UCL POIs are shown as clusters using the marker cluster plugin. For different zoom levels, the map display is adapted so that a certain portion of buildings is shown (Fig. 11).
 
 ![9](https://user-images.githubusercontent.com/32243459/39721526-c0220d88-5237-11e8-998e-ffcf8317ccfb.png)
 
-Fig. 2: The figure shows how the map display is adapted in order to show a certain portion of the POIs. The non-shown POIs are indicated as clusters.
+Fig. 11: The figure shows how the map display is adapted in order to show a certain portion of the POIs. The non-shown POIs are indicated as clusters.
+
 
 
 ## 3. Server Side Code - Node JS and REST
