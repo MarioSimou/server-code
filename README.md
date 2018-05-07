@@ -5,19 +5,19 @@
 
 *- Description*
 
-The UCL Question System app is a browsed-based web application that works in conjunction with the UCL Quiz app. The main operation of the application is data collection and the population of the back-end database that is used by the UCL Quiz app. In particular, it enables to a user to record POIs in which information has been attached that is employed by the quiz app.
+>The UCL Question System app is a browsed-based web application that works in conjunction with the UCL Quiz app. The main operation of the application is data collection and the population of the back-end database that is used by the UCL Quiz app. In particular, it enables to a user to record POIs in which information has been attached that is employed by the quiz app.
 
 *- Target Audience*
 
-The web application can be used by anyone of any age. The user does not need to have any experience in order to be able to use the application.
+>The web application can be used by anyone of any age. The user does not need to have any experience in order to be able to use the application.
 
 *- Product Goals*
 
-The goal of the current app is to enhance the capabilities of ULC Quiz app, so that a user can easily populate the POI dataset that is present in the database. As a result, the dataset is constantly expanded and no more procedures are needed to adopt the changes that are happening in the dataset. 
+>The goal of the current app is to enhance the capabilities of ULC Quiz app, so that a user can easily populate the POI dataset that is present in the database. As a result, the dataset is constantly expanded and no more procedures are needed to adopt the changes that are happening in the dataset. 
 
 *- Tech Details*
 
-The web application is compatible with the following browsers:
+>The web application is compatible with the following browsers:
 - Google Chrome Version 66.0.3359.139 (64-bit)
 - Google Chrome Version 48.0.2564.109 (64-bit)
 - Mozilla Firefox Quantum Version 59.0.2 (64-bit)
@@ -31,35 +31,35 @@ A user can access the application in the following link:
 
 *- System Architecture*
 
-While a variety of models are available about how the communication between a client and a server is constructed, the three-tier architecture was chosen and implemented for the purpose of our assignment. In these terms, the created app, which comprises the presentation tier of our architecture, displays information related to the requirements and specifications of the project, and any user-interface interaction is processed by the application tier and send it on the data tier. At this layer, the server and the database are maintained. 
+>While a variety of models are available about how the communication between a client and a server is constructed, the three-tier architecture was chosen and implemented for the purpose of our assignment. In these terms, the created app, which comprises the presentation tier of our architecture, displays information related to the requirements and specifications of the project, and any user-interface interaction is processed by the application tier and send it on the data tier. At this layer, the server and the database are maintained. 
 
 *- Constraints*
 
-The map display has been set such only that the UCL campus is shown. Therefore, the app will not work normally if it is launched to an area outside of UCL campus. 
+>The map display has been set such only that the UCL campus is shown. Therefore, the app will not work normally if it is launched to an area outside of UCL campus. 
 
 **Featureset**
 
-The main functionality of the web application is based on the Leaflet library, using a variety of functionalities that the library is compatible with. Plugins are also employed to improve the capabilities of the application.
+>The main functionality of the web application is based on the Leaflet library, using a variety of functionalities that the library is compatible with. Plugins are also employed to improve the capabilities of the application.
 The UCL Question System app is equipped with a variety of commands that are described below:
 
 ![6](https://user-images.githubusercontent.com/32243459/39720997-0093dec0-5236-11e8-8766-17d5ff685771.png)
 
-> Search Command 
+*Search Command *
 
-A commands that enables on a user to search a building based on its corresponded question. The result is indicated with a marker on the map.
+>A commands that enables on a user to search a building based on its corresponded question. The result is indicated with a marker on the map.
 This command has been built using the leaflet search plugin.
 
 ![7](https://user-images.githubusercontent.com/32243459/39721038-14e85ac2-5236-11e8-87f2-08bafbf76a76.png)
 
-> Clean Command
+*Clean Command*
 
-Markers that may remain from a search process are cleaned from the map. This command uses the removeFrom function to remove the markers from the map.
+>Markers that may remain from a search process are cleaned from the map. This command uses the removeFrom function to remove the markers from the map.
 
 ![8](https://user-images.githubusercontent.com/32243459/39721063-216de74e-5236-11e8-9538-67ac7d8b4b09.png)
 
-> Full Zoom Command 
+*Full Zoom Command *
 
-The map zoom changes so that a full display of the data is given. This command uses the fitBounds, and getBounds methods to set the bounding boxes of the map display and the buildings dataset equal.
+>The map zoom changes so that a full display of the data is given. This command uses the fitBounds, and getBounds methods to set the bounding boxes of the map display and the buildings dataset equal.
 
 ![11](https://user-images.githubusercontent.com/32243459/39721157-6fceb170-5236-11e8-8edd-b4e404b5c744.png)
 
