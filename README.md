@@ -239,13 +239,6 @@ Markers that may remain from a search process are cleaned from the map. This com
 
 The map zoom changes so that a full display of the data is given. This command uses the fitBounds, and getBounds methods to set the bounding boxes of the map display and the buildings dataset equal.
 
-![11](https://user-images.githubusercontent.com/32243459/39721157-6fceb170-5236-11e8-8edd-b4e404b5c744.png)
-
-**Geolocation Command**
-
-Enables the geolocation of the user and marks his/her location on a map. The accuracy of the geolocation is shown with a buffer around the marked position of the user. Based on the user desire, the geolocation command can be activated or deactivated.
-The functionality of the geolocation command is based on the locate, stopLocate methods, and locationfound and locationerror events. The geolocation has been adjusted using the desired location options.
-
 **Labels - Pop up windows**
 
 While both images below show the same content, their foundations are based on  different principles and, therefore, they are categorised in two distinct label types. The left image is a class-based label, whereas the right image is a popup-based label.  
@@ -269,7 +262,6 @@ The UCL POIs are shown as clusters using the marker cluster plugin. For differen
 ![9](https://user-images.githubusercontent.com/32243459/39721526-c0220d88-5237-11e8-998e-ffcf8317ccfb.png)
 
 Fig. 2: The figure shows how the map display is adapted in order to show a certain portion of the POIs. The non-shown POIs are indicated as clusters.
-
 
 
 ## 3. Server Side Code - Node JS and REST
