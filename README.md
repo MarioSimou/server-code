@@ -37,19 +37,28 @@ While a variety of models are available about how the communication between a cl
 
 The map display has been set such only that the UCL campus is shown. Therefore, the app will not work normally if it is launched to an area outside of UCL campus. 
 
-*1.1 Featureset*
+**Featureset**
 
 The main functionality of the web application is based on the Leaflet library, using a variety of functionalities that the library is compatible with. Plugins are also employed to improve the capabilities of the application.
 The UCL Question System app is equipped with a variety of commands that are described below:
 
-Search Command 
+![6](https://user-images.githubusercontent.com/32243459/39720997-0093dec0-5236-11e8-8766-17d5ff685771.png)
+
+> Search Command 
+
 A commands that enables on a user to search a building based on its corresponded question. The result is indicated with a marker on the map.
 This command has been built using the leaflet search plugin.
 
-Clean Command
+![7](https://user-images.githubusercontent.com/32243459/39721038-14e85ac2-5236-11e8-87f2-08bafbf76a76.png)
+
+> Clean Command
+
 Markers that may remain from a search process are cleaned from the map. This command uses the removeFrom function to remove the markers from the map.
 
-Full Zoom Command 
+![8](https://user-images.githubusercontent.com/32243459/39721063-216de74e-5236-11e8-9538-67ac7d8b4b09.png)
+
+> Full Zoom Command 
+
 The map zoom changes so that a full display of the data is given. This command uses the fitBounds, and getBounds methods to set the bounding boxes of the map display and the buildings dataset equal.
 
 Geolocation Command
