@@ -65,6 +65,12 @@ The map zoom changes so that a full display of the data is given. This command u
 Enables the geolocation of the user and marks his/her location on a map. The accuracy of the geolocation is shown with a buffer around the marked position of the user. Based on the user desire, the geolocation command can be activated or deactivated.
 The functionality of the geolocation command is based on the ```locate```, ```stopLocate``` methods, and ```locationfound``` and ```locationerror``` events. The geolocation has been adjusted using the desired location options.
 
+![mari](https://user-images.githubusercontent.com/32243459/39732685-b47daf62-5266-11e8-9f09-24ab1f9ffe78.png)
+
+** Help Command**
+
+Pressing this command, a new site opens with the corresponded documentation of the app. This has been done using a link ```a```.
+
 **Labels - Pop up windows**
 
 While both images below show the same content, their foundations are based on  different principles and, therefore, they are categorised in two distinct label types. The left image is a **class-based** label, whereas the right image is a **popup-based** label.  
