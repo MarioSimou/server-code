@@ -154,7 +154,7 @@ The [UCL Question System app](https://github.com/MarioSimou/UCL-Question-System-
 
 A menu bar is available that the user might use and changes some of the functionalities of the app (Fig. 5). The menu bar options are described below:
 
-![1](https://user-images.githubusercontent.com/32243459/39722279-0fc99e1c-523a-11e8-84f0-aa8d4d80e409.png)
+![1](https://user-images.githubusercontent.com/32243459/39732432-3485a39c-5265-11e8-8577-420d82c4204f.png)
 
 Fig. 5: The app is equipped with a menu bar that provides a variety of options, which change the operation of the app.
 
@@ -214,6 +214,13 @@ Fig. 9: The Quiz level determines different levels of difficulties for the time 
 The main functionality of the web application is based on the Leaflet library, using a variety of functionalities that the library is compatible with. Plugins are also employed to improve the capabilities of the application.
 The [UCL Question System app](https://github.com/MarioSimou/UCL-Question-System-app) is equipped with a variety of commands that are described below:
 
+**Help:**
+
+Pressing this command, a new site opens with the corresponded documentation of the app (Fig. 10).
+
+![doc](https://user-images.githubusercontent.com/32243459/39732460-84e52d26-5265-11e8-9935-f896c5f227da.png)
+
+Fig. 10: The documentation of the quiz app can be accessed through the Help option of the menu bar.
 
 **2.Map-based commands**
 
@@ -238,7 +245,7 @@ The map zoom changes so that a full display of the data is given. This command u
 
 **Labels - Pop up windows**
 
-While both images below show the same content, their foundations are based on  different principles and, therefore, they are categorised in two distinct label types. The left image is a **class-based** label, whereas the right image is a **popup-based** label (Fig. 10).  
+While both images below show the same content, their foundations are based on  different principles and, therefore, they are categorised in two distinct label types. The left image is a **class-based** label, whereas the right image is a **popup-based** label (Fig. 11).  
 
 *1) Class-based:*
 
@@ -250,24 +257,24 @@ This type of label is created using the ```L.popup``` class that is by default p
 
 ![13](https://user-images.githubusercontent.com/32243459/39721604-f8f1db16-5237-11e8-894b-4f9576c921e5.png)
 
-Fig. 10: The two types of labels that are employed for the UCL Question System App.
+Fig. 11: The two types of labels that are employed for the UCL Question System App.
 
 **Clusters**
 
-The UCL POIs are shown as clusters using the [marker cluster](https://github.com/Leaflet/Leaflet.markercluster) plugin. For different zoom levels, the map display is adapted so that a certain portion of buildings is shown (Fig. 11).
+The UCL POIs are shown as clusters using the [marker cluster](https://github.com/Leaflet/Leaflet.markercluster) plugin. For different zoom levels, the map display is adapted so that a certain portion of buildings is shown (Fig. 12).
 
 ![9](https://user-images.githubusercontent.com/32243459/39721526-c0220d88-5237-11e8-998e-ffcf8317ccfb.png)
 
-Fig. 11: The figure shows how the map display is adapted in order to show a certain portion of the POIs. The non-shown POIs are indicated as clusters.
+Fig. 12: The figure shows how the map display is adapted in order to show a certain portion of the POIs. The non-shown POIs are indicated as clusters.
 
 **Form/Multiple Choice Question**
 
-Based on the selected quiz options of the user, the quiz is executed with different ways. However, for all options a multiple-choice question is asked [Fig 12 (A)]. This has been achieved using the [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Glossary/XHR_(XMLHttpRequest)) method, which loads the question through an AJAX GET request. While the form is loaded, the initial content of the form is adjusted so that a question related to the closest building is shown. Using [Javascript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript) and [DOM](https://developer.mozilla.org/en-US/docs/Glossary/DOM), the [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML) elements of the document are gained, and their content is replaced by the content of the question. When the form is filled by the user, the user’s input is processed and checked using boolean operators. 
-The equality between the user input and the correct answer that is contained in the buildings’ dataset is therefore checked. A pop up, which is created using the L.popup class, returns on the user, indicating weather his/her answer is correct, and a piece of information is sent back to the database through an AJAX POST request [Fig 12 (B)]. More specifically, the data contains information about the user device model, a boolean operator that shows whether the user uses a mobile device, the question, the user input, the question’s correct answer, and the location of the user.
+Based on the selected quiz options of the user, the quiz is executed with different ways. However, for all options a multiple-choice question is asked [Fig 13 (A)]. This has been achieved using the [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Glossary/XHR_(XMLHttpRequest)) method, which loads the question through an AJAX GET request. While the form is loaded, the initial content of the form is adjusted so that a question related to the closest building is shown. Using [Javascript](https://developer.mozilla.org/en-US/docs/Glossary/JavaScript) and [DOM](https://developer.mozilla.org/en-US/docs/Glossary/DOM), the [HTML](https://developer.mozilla.org/en-US/docs/Glossary/HTML) elements of the document are gained, and their content is replaced by the content of the question. When the form is filled by the user, the user’s input is processed and checked using boolean operators. 
+The equality between the user input and the correct answer that is contained in the buildings’ dataset is therefore checked. A pop up, which is created using the L.popup class, returns on the user, indicating weather his/her answer is correct, and a piece of information is sent back to the database through an AJAX POST request [Fig 13 (B)]. More specifically, the data contains information about the user device model, a boolean operator that shows whether the user uses a mobile device, the question, the user input, the question’s correct answer, and the location of the user.
 
 ![16](https://user-images.githubusercontent.com/32243459/39725634-6be6fbb8-5244-11e8-87ee-f444539cf2cb.png)
 
-Fig. 12: (A) The multiple choice question that the user is prompted to answer. (B) A pop up is binded on the user location, indicating whether his/her answer is correct or not.
+Fig. 13: (A) The multiple choice question that the user is prompted to answer. (B) A pop up is binded on the user location, indicating whether his/her answer is correct or not.
 
 ## 3. Server Side Code - Node JS and REST
 
