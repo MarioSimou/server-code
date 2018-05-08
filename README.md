@@ -67,7 +67,7 @@ The functionality of the geolocation command is based on the ```locate```, ```st
 
 ![mari](https://user-images.githubusercontent.com/32243459/39732685-b47daf62-5266-11e8-9f09-24ab1f9ffe78.png)
 
-** Help Command**
+**Help Command**
 
 Pressing this command, a new site opens with the corresponded documentation of the app. This has been done using a link ```a```.
 
